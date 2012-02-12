@@ -2,7 +2,7 @@
 ==========
 
 
-This libriary allows you to take an object, and generate a CREATE TABLE Sql statement to store it.
+This libriary allows you to take an object and generate a CREATE TABLE Sql statement to store it.
 
 It doesn't do any fancy mapping, and at this moment supports only types that can be directly stored to database, e.g. int, string, bool, enums.
 There's no support for collections or inner complex objects yet. Also there's no support for foreign keys, indexes, filegroups, etc.
@@ -77,4 +77,4 @@ Again,
 ```
 
 
-Anyhow, if you find it useful - great. If you'll have any ideas - drop me a line at evgeni at etcoding dot com.
+Anyhow, if you find it useful - great. If you have any ideas - drop me a line at evgeni at etcoding dot com.
