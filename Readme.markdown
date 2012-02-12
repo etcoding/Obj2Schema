@@ -37,7 +37,8 @@ then you can generate sql like this:
 ```csharp
 	Table<SimpleUser> tableSimple = new Table<SimpleUser>(MySqlDataTypesMap.Instance);
 	string sql = tableSimple.GetSql();
-	// sql is "CREATE TABLE SimpleUser (Id INT PRIMARY KEY AUTO_INCREMENT, Name VARCHAR(250) NULL, Age INT NULL, Gender VARCHAR(20) NULL)"
+	// sql is "CREATE TABLE SimpleUser (Id INT PRIMARY KEY AUTO_INCREMENT, 
+	//         Name VARCHAR(250) NULL, Age INT NULL, Gender VARCHAR(20) NULL)"
 ```
 
 
@@ -71,7 +72,8 @@ Again,
 ```csharp
 	Table<SimpleUser> tableSimple = new Table<SimpleUser>(MySqlDataTypesMap.Instance);
 	string sql = tableSimple.GetSql();
-	// sql is "CREATE TABLE Users (FirstName VARCHAR(20), LastName VARCHAR(30), Gender INT NULL, Income DOUBLE(10,2) NOT NULL, CONSTRAINT pk_Users PRIMARY KEY (FirstName, LastName))"
+	// sql is "CREATE TABLE Users (FirstName VARCHAR(20), LastName VARCHAR(30), Gender INT NULL, 
+	//         Income DOUBLE(10,2) NOT NULL, CONSTRAINT pk_Users PRIMARY KEY (FirstName, LastName))"
 ```
 
 
