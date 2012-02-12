@@ -61,7 +61,6 @@
     <Compile Include="SampleClasses\Simple.cs" />
     <Compile Include="SampleClasses\User.cs" />
     <Compile Include="SampleClasses\User2.cs" />
-    <Compile Include="SampleUsage.cs" />
     <Compile Include="TableTest.cs" />
   </ItemGroup>
   <ItemGroup>
