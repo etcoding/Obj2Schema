@@ -182,7 +182,7 @@ namespace Tests
         public void MySqlMap_ShouldGenerate_ValidSql_User2()
         {
             Table<User2> t = new Table<User2>(MySqlDataTypesMap.Instance);
-            t.GetSql().Should().Be("CREATE TABLE Users (FirstName VARCHAR(20), LastName VARCHAR(30), Gender INT NULL, Income DOUBLE(10,2) NOT NULL, CONSTRAINT pk_Users PRIMARY KEY (FirstName, LastName))");
+            t.GetSql().Should().Be("CREATE TABLE Users (FirstName VARCHAR(20), LastName VARCHAR(30), Gender INT NOT NULL, Income DOUBLE(10,2) NULL, CONSTRAINT pk_Users PRIMARY KEY (FirstName, LastName))");
         }
 
         [TestMethod()]
@@ -196,7 +196,7 @@ namespace Tests
         public void SqlServerMap_ShouldGenerate_ValidSql_User2()
         {
             Table<User2> t = new Table<User2>(SqlServerDataTypesMap.Instance);
-            t.GetSql().Should().Be("CREATE TABLE Users (FirstName VARCHAR(20), LastName VARCHAR(30), Gender INT NULL, Income FLOAT NOT NULL, CONSTRAINT pk_Users PRIMARY KEY (FirstName, LastName))");
+            t.GetSql().Should().Be("CREATE TABLE Users (FirstName VARCHAR(20), LastName VARCHAR(30), Gender INT NOT NULL, Income FLOAT NULL, CONSTRAINT pk_Users PRIMARY KEY (FirstName, LastName))");
         }
 
         [TestMethod()]
@@ -210,7 +210,7 @@ namespace Tests
         public void SqliteMap_ShouldGenerate_ValidSql_User2()
         {
             Table<User2> t = new Table<User2>(SqliteDataTypesMap.Instance);
-            t.GetSql().Should().Be("CREATE TABLE Users (FirstName TEXT, LastName TEXT, Gender INTEGER NULL, Income REAL NOT NULL, PRIMARY KEY (FirstName, LastName))");
+            t.GetSql().Should().Be("CREATE TABLE Users (FirstName TEXT, LastName TEXT, Gender INTEGER NOT NULL, Income REAL NULL, PRIMARY KEY (FirstName, LastName))");
         }
         #endregion
     }

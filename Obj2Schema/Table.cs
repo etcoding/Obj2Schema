@@ -110,26 +110,6 @@ namespace ET.Obj2Schema
         /// <returns></returns>
         public string GetSql()
         {
-            return GenerateSql();
-        }
-
-        /// <summary>
-        /// Returns a <see cref="System.String"/> that represents this instance.
-        /// </summary>
-        /// <returns>
-        /// A <see cref="System.String"/> that represents this instance.
-        /// </returns>
-        override public string ToString()
-        {
-            return GenerateSql();
-        }
-
-        /// <summary>
-        /// Generates the SQL from fields.
-        /// </summary>
-        /// <returns></returns>
-        private string GenerateSql()
-        {
             StringBuilder sbSql = new StringBuilder();
             sbSql.Append(createTable + " " + this.TableName + " (");
             for (int i = 0; i < this.Fields.Count; i++)
@@ -162,7 +142,18 @@ namespace ET.Obj2Schema
 
             // ok, last step - see if we need to make any replacements
             sbSql.Replace(DbDataTypesMapBase.ReplacementStrings.TableName, this.TableName);
-            return sbSql.ToString(); ;
+            return sbSql.ToString();
+        }
+
+        /// <summary>
+        /// Returns a <see cref="System.String"/> that represents this instance.
+        /// </summary>
+        /// <returns>
+        /// A <see cref="System.String"/> that represents this instance.
+        /// </returns>
+        override public string ToString()
+        {
+            return GetSql();
         }
     }
 }

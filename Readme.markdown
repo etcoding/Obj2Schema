@@ -72,8 +72,8 @@ Again,
 ```csharp
 	Table<SimpleUser> tableSimple = new Table<SimpleUser>(MySqlDataTypesMap.Instance);
 	string sql = tableSimple.GetSql();
-	// sql is "CREATE TABLE Users (FirstName VARCHAR(20), LastName VARCHAR(30), Gender INT NULL, 
-	//         Income DOUBLE(10,2) NOT NULL, CONSTRAINT pk_Users PRIMARY KEY (FirstName, LastName))"
+	// sql is "CREATE TABLE Users (FirstName VARCHAR(20), LastName VARCHAR(30), Gender INT NOT NULL, 
+	//			Income DOUBLE(10,2) NULL, CONSTRAINT pk_Users PRIMARY KEY (FirstName, LastName))"
 ```
 
 

@@ -182,7 +182,7 @@ namespace ET.Obj2Schema
                 (string.IsNullOrEmpty(this.SqlFieldAttribute) ? string.Empty : " " + this.SqlFieldAttribute);
             if (!this.IsPrimaryKey)
             {
-                if (this.IsRequired == null || !this.IsRequired.Value == false)
+                if (this.IsRequired == null || this.IsRequired.Value == false)
                     sql += " " + DbDataTypesMapBase.SqlStrings.Null;
                 else
                     sql += " " + DbDataTypesMapBase.SqlStrings.NotNull;

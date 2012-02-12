@@ -4,6 +4,7 @@ using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Tests.SampleClasses;
 using System;
+using System.Diagnostics;
 
 namespace Tests
 {
