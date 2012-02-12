@@ -1,0 +1,5 @@
+D:\Development\Projects\Obj2Schema\Obj2Schema\bin\Debug\Obj2Schema.dll
+D:\Development\Projects\Obj2Schema\Obj2Schema\bin\Debug\Obj2Schema.pdb
+D:\Development\Projects\Obj2Schema\Obj2Schema\obj\Debug\ResolveAssemblyReference.cache
+D:\Development\Projects\Obj2Schema\Obj2Schema\obj\Debug\Obj2Schema.dll
+D:\Development\Projects\Obj2Schema\Obj2Schema\obj\Debug\Obj2Schema.pdb

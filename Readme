@@ -1,0 +1,15 @@
+﻿This libriary allows to take an object, and generate a CREATE TABLE Sql statement to store it.
+
+It doesn't do any fancy mapping, and at this moment supports only types that can be directly stored to database, e.g. int, string, bool, enums.
+There's no support for collections or inner complex objects yet. Also there's not support for foreign keys, indexes, filegroups, etc.
+
+Right now libriary supports 3 databases: Sql Server, MySql, and Sqlite. Adding new ANSI SQL-compliant database should be very straightforward - 
+just create a new map by inheriting from DbDataTypesMapBase or one of the predefined maps, and filling out the Maps and Expressions dictionaries.
+Looking at one of the predefined maps should get you started in no time.
+
+The library was created when I was making a Visual Studio extension, which was using Sqlite, and I needed a few tables to store some simple classes.
+I guess i'm starting to get lazy, and prefer to write more code to do less - in this case have something to generate SQL schema for me.
+
+For usage example see SampleUsage class in tests.
+
+Anyhow, if you'll find it useful - great. If you'll have any ideas - drop me a line at evgeni at etcoding dot com.

@@ -1,0 +1,10 @@
+D:\Development\Projects\Obj2Schema\Tests\bin\Debug\Tests.dll
+D:\Development\Projects\Obj2Schema\Tests\bin\Debug\Tests.pdb
+D:\Development\Projects\Obj2Schema\Tests\bin\Debug\FluentAssertions.dll
+D:\Development\Projects\Obj2Schema\Tests\bin\Debug\Obj2Schema.dll
+D:\Development\Projects\Obj2Schema\Tests\bin\Debug\Obj2Schema.pdb
+D:\Development\Projects\Obj2Schema\Tests\bin\Debug\FluentAssertions.pdb
+D:\Development\Projects\Obj2Schema\Tests\bin\Debug\FluentAssertions.xml
+D:\Development\Projects\Obj2Schema\Tests\obj\Debug\ResolveAssemblyReference.cache
+D:\Development\Projects\Obj2Schema\Tests\obj\Debug\Tests.dll
+D:\Development\Projects\Obj2Schema\Tests\obj\Debug\Tests.pdb
