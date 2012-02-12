@@ -19,6 +19,7 @@ Usage:
 ------
 
 Let's say you have class
+
 ```csharp
     class SimpleUser
     {
@@ -31,8 +32,8 @@ Let's say you have class
     public enum Genders { Male, Female }  // Yay, there's enum support! Take that, EF!
 ```
 
-
 then you can generate sql like this:
+
 ```csharp
 	Table<SimpleUser> tableSimple = new Table<SimpleUser>(MySqlDataTypesMap.Instance);
 	string sql = tableSimple.GetSql();
@@ -41,6 +42,7 @@ then you can generate sql like this:
 
 
 You can control the output with attributes:
+
 ```csharp
     [Required]  // Make all fields NOT NULL by default
     [Table("Users")]
@@ -63,7 +65,8 @@ You can control the output with attributes:
         public double Income { set; get; }
     }
 ```
-again,
+
+Again,
 
 ```csharp
 	Table<SimpleUser> tableSimple = new Table<SimpleUser>(MySqlDataTypesMap.Instance);
