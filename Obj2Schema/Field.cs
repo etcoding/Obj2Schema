@@ -57,8 +57,8 @@ namespace ET.Obj2Schema
         {
             set
             {
-                this.isPrimaryKey = true;
-                this.IsRequired = true;
+                this.isPrimaryKey = value;
+                this.IsRequired = value;
             }
             get { return this.isPrimaryKey; }
         }
