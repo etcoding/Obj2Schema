@@ -70,7 +70,7 @@ You can control the output with attributes:
 Again,
 
 ```csharp
-	Table<SimpleUser> tableSimple = new Table<SimpleUser>(MySqlDataTypesMap.Instance);
+	Table<User2> tableSimple = new Table<User2>(MySqlDataTypesMap.Instance);
 	string sql = tableSimple.GetSql();
 	// sql is "CREATE TABLE Users (FirstName VARCHAR(20), LastName VARCHAR(30), Gender INT NOT NULL, 
 	//			Income DOUBLE(10,2) NULL, CONSTRAINT pk_Users PRIMARY KEY (FirstName, LastName))"
