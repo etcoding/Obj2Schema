@@ -52,11 +52,11 @@ You can control the output with attributes:
         [Key]
         [Column("FirstName")]
         [Length(20)]
-        public string FirstName { set; get; }
+        public string FName { set; get; }
         [Key]
         [Column("LastName")]
         [Length(30)]
-        public string LastName { set; get; }
+        public string LName { set; get; }
         [EnumDbDataType(EnumDbDataTypes.Int)]
         public Genders Gender { set; get; }
         [Ignore]
