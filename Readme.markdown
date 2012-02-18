@@ -2,7 +2,7 @@
 ==========
 
 
-This libriary allows you to take an object and generate a CREATE TABLE Sql statement to store it.
+This library allows you to take an object and generate a CREATE TABLE Sql statement to store it.
 
 It doesn't do any fancy mapping, and at this moment supports only types that can be directly stored to database, e.g. int, string, bool, enums.
 There's no support for collections or inner complex objects yet. Also there's no support for foreign keys, indexes, filegroups, etc.
@@ -13,6 +13,8 @@ Looking at one of the predefined maps should get you started in no time.
 
 The library was created when I was making a Visual Studio extension, which was using Sqlite, and I needed a few tables to store some simple classes.
 I guess i'm starting to get lazy, and prefer to write more code to do less - in this case have something to generate SQL schema for me.
+
+It is also available as a Nuget package.
 
 
 Usage:
