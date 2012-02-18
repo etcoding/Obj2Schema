@@ -5,6 +5,7 @@ using System.Text;
 using System.Reflection;
 using ET.Obj2Schema.Maps;
 using System.Diagnostics;
+using ET.Obj2Schema.Attributes;
 
 namespace ET.Obj2Schema
 {

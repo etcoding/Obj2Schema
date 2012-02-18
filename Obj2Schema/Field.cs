@@ -2,6 +2,7 @@
 using System.Reflection;
 using System.Text.RegularExpressions;
 using ET.Obj2Schema.Maps;
+using ET.Obj2Schema.Attributes;
 
 namespace ET.Obj2Schema
 {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ET.Obj2Schema
+namespace ET.Obj2Schema.Attributes
 {
     /// <summary>
     /// Defines a custom name for a table.
@@ -15,7 +15,7 @@ namespace ET.Obj2Schema
 
         public TableAttribute(string name)
         {
-            if (string.IsNullOrWhiteSpace(name))
+            if (string.IsNullOrEmpty(name))
                 throw new ArgumentException("Name is not specified");
             this.Name = name;
         }

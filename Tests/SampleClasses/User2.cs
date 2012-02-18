@@ -1,5 +1,6 @@
 ﻿using System;
 using ET.Obj2Schema;
+using ET.Obj2Schema.Attributes;
 
 namespace Tests.SampleClasses
 {

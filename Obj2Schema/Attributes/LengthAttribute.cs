@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ET.Obj2Schema
+namespace ET.Obj2Schema.Attributes
 {
     [AttributeUsage(AttributeTargets.Property)]
     public class LengthAttribute : Attribute
@@ -23,7 +23,7 @@ namespace ET.Obj2Schema
         /// <param name="customLen">The custom length declaration.</param>
         public LengthAttribute(string customLen)
         {
-            if (string.IsNullOrWhiteSpace(customLen))
+            if (string.IsNullOrEmpty(customLen))
                 throw new ArgumentException("Length must be set");
             this.CustomLength = customLen.Replace("(", string.Empty).Replace(")", string.Empty);
         }

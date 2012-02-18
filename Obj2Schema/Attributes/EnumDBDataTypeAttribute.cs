@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ET.Obj2Schema
+namespace ET.Obj2Schema.Attributes
 {
     [AttributeUsage(AttributeTargets.Enum | AttributeTargets.Property)]
     public class EnumDbDataTypeAttribute : Attribute

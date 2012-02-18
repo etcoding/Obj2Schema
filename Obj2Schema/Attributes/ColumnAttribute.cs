@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace ET.Obj2Schema
+namespace ET.Obj2Schema.Attributes
 {
     /// <summary>
     /// Defines a custom column name for a property.

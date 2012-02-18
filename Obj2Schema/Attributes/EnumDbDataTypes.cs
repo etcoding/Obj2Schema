@@ -1,4 +1,4 @@
-﻿namespace ET.Obj2Schema
+﻿namespace ET.Obj2Schema.Attributes
 {
     /// <summary>
     /// Lists the way enum can be stored

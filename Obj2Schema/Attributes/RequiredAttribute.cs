@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ET.Obj2Schema
+namespace ET.Obj2Schema.Attributes
 {
     /// <summary>
     /// If applied to a class, will make all properties required (or not).
