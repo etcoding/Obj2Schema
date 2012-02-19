@@ -6,6 +6,6 @@
     /// </summary>
     public enum DataTypes
     {
-        Bool, Byte, Char, DateTime, Decimal, Double, Float, Int, Long, Short, String, Guid, Enum
+        Bool, Byte, Char, DateTime, Decimal, Double, Float, Int, Long, Short, String, Guid, Enum, TimeSpan
     }
 }

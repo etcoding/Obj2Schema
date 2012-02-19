@@ -213,5 +213,29 @@ namespace Tests
             t.GetSql().Should().Be("CREATE TABLE Users (FirstName TEXT, LastName TEXT, Gender INTEGER NOT NULL, Income REAL NULL, PRIMARY KEY (FirstName, LastName))");
         }
         #endregion
+
+        #region Timespan test
+        [TestMethod()]
+        public void SqliteMap_ShouldGenerate_ValidTimespan()
+        {
+            Table<CWithTimeSpan> t = new Table<CWithTimeSpan>(SqliteDataTypesMap.Instance);
+            t.GetSql().Should().Be("CREATE TABLE CWithTimeSpan (Span INTEGER NULL)");
+        }
+
+
+        [TestMethod()]
+        public void MysqlMap_ShouldGenerate_ValidTimespan()
+        {
+            Table<CWithTimeSpan> t = new Table<CWithTimeSpan>(MySqlDataTypesMap.Instance);
+            t.GetSql().Should().Be("CREATE TABLE CWithTimeSpan (Span BIGINT NULL)");
+        }
+
+        [TestMethod()]
+        public void SqlServerMap_ShouldGenerate_ValidTimespan()
+        {
+            Table<CWithTimeSpan> t = new Table<CWithTimeSpan>(SqlServerDataTypesMap.Instance);
+            t.GetSql().Should().Be("CREATE TABLE CWithTimeSpan (Span BIGINT NULL)");
+        }
+        #endregion
     }
 }

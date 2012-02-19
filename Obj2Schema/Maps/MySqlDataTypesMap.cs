@@ -24,6 +24,7 @@
             this.Map.Add(DataTypes.Long, "BIGINT");
             this.Map.Add(DataTypes.Short, "MEDIUMINT");
             this.Map.Add(DataTypes.String, "VARCHAR(250)");
+            this.Map.Add(DataTypes.TimeSpan, "BIGINT");
 
             this.Expressions.Add(SqlExpressions.PrimaryKeyDeclaredOnTable, "CONSTRAINT pk_" + DbDataTypesMapBase.ReplacementStrings.TableName + " PRIMARY KEY");
             this.Expressions.Add(SqlExpressions.PrimaryKeyDeclaredOnColumn, "PRIMARY KEY");

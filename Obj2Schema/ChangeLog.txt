@@ -1,0 +1,2 @@
+﻿1.0.2
+Added support for TimeSpan. Will be stored as a long/bigint, which allows to store timespan's Ticks.

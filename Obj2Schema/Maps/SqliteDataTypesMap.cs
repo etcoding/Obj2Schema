@@ -30,6 +30,7 @@ namespace ET.Obj2Schema.Maps
             this.Map.Add(DataTypes.Guid, "TEXT");
             this.Map.Add(DataTypes.Long, "INTEGER");
             this.Map.Add(DataTypes.Short, "INTEGER");
+            this.Map.Add(DataTypes.TimeSpan, "INTEGER");
 
             this.Expressions.Add(SqlExpressions.AutoIncrement, "AUTOINCREMENT");
             this.Expressions.Add(SqlExpressions.PrimaryKeyDeclaredOnTable, "PRIMARY KEY");

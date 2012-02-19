@@ -30,6 +30,7 @@ namespace ET.Obj2Schema.Maps
 
         /// <summary>
         /// This will map values between DataTypes enum and actual .NET datatypes.
+        /// When adding new data type, it has to be added to DataTypes enum and this dictionary.
         /// </summary>
         private Dictionary<Type, DataTypes> netToDataTypesMap = new Dictionary<Type, DataTypes>() 
         { 
@@ -46,7 +47,8 @@ namespace ET.Obj2Schema.Maps
             {typeof(int), DataTypes.Int},
             {typeof(long), DataTypes.Long},
             {typeof(short), DataTypes.Short},
-            {typeof(string), DataTypes.String}
+            {typeof(string), DataTypes.String},
+            {typeof(TimeSpan), DataTypes.TimeSpan}
             #endregion
         };
 
@@ -127,7 +129,7 @@ namespace ET.Obj2Schema.Maps
             /// <summary>
             /// This will be replaced with actual table name.
             /// </summary>
-            public const string TableName  = "{TableName}";
+            public const string TableName = "{TableName}";
         }
     }
 }
