@@ -1,2 +1,5 @@
 ﻿1.0.2
 Added support for TimeSpan. Will be stored as a long/bigint, which allows to store timespan's Ticks.
+
+1.0.3
+Changed table to include read-only (e.g. {get; private set;}) properties.
