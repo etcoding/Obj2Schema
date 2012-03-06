@@ -21,5 +21,17 @@ namespace Tests
         {
             Table<Simple> t = new Table<Simple>(null);
         }
+
+        [TestMethod]
+        public void Table_ShouldContain_ReadonlyProperty()
+        {
+            Table<SampleWithReadOnlyProperty> table = new Table<SampleWithReadOnlyProperty>(SqliteDataTypesMap.Instance);
+            table.Fields.Count.Should().Be(1);
+        }
+
+        private class SampleWithReadOnlyProperty
+        {
+            public string Name { get { return "Bob"; } }
+        }
     }
 }

@@ -59,7 +59,7 @@ namespace ET.Obj2Schema
             #endregion
 
             // get public properties, and create fields
-            PropertyInfo[] properties = this.targetType.GetProperties().Where(x => x.CanRead && x.CanWrite).ToArray();
+            PropertyInfo[] properties = this.targetType.GetProperties().Where(x => x.CanRead).ToArray();
             foreach (PropertyInfo property in properties)
             {
                 Type ptype = property.PropertyType;

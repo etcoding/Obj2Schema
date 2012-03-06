@@ -13,8 +13,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.csproj", "{A16E21BB-29FF-42EE-B804-364C3378EDFD}"
-EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = Obj2Schema.vsmdi
@@ -48,16 +46,6 @@ Global
 		{12E63C80-0E5F-43F0-8E69-D8C5C649C76E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{12E63C80-0E5F-43F0-8E69-D8C5C649C76E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{12E63C80-0E5F-43F0-8E69-D8C5C649C76E}.Release|x86.ActiveCfg = Release|Any CPU
-		{A16E21BB-29FF-42EE-B804-364C3378EDFD}.Debug|Any CPU.ActiveCfg = Debug|x86
-		{A16E21BB-29FF-42EE-B804-364C3378EDFD}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
-		{A16E21BB-29FF-42EE-B804-364C3378EDFD}.Debug|Mixed Platforms.Build.0 = Debug|x86
-		{A16E21BB-29FF-42EE-B804-364C3378EDFD}.Debug|x86.ActiveCfg = Debug|x86
-		{A16E21BB-29FF-42EE-B804-364C3378EDFD}.Debug|x86.Build.0 = Debug|x86
-		{A16E21BB-29FF-42EE-B804-364C3378EDFD}.Release|Any CPU.ActiveCfg = Release|x86
-		{A16E21BB-29FF-42EE-B804-364C3378EDFD}.Release|Mixed Platforms.ActiveCfg = Release|x86
-		{A16E21BB-29FF-42EE-B804-364C3378EDFD}.Release|Mixed Platforms.Build.0 = Release|x86
-		{A16E21BB-29FF-42EE-B804-364C3378EDFD}.Release|x86.ActiveCfg = Release|x86
-		{A16E21BB-29FF-42EE-B804-364C3378EDFD}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
