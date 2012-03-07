@@ -93,7 +93,7 @@ Types can have complex properties.
         public string Name { get; set; }
         public Address UserAddress { get; set; }
     }
-```csharp
+```
 
 will generate "CREATE TABLE User (Id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT NULL, Address_StreetName TEXT NULL, Address_City TEXT NULL)".
 ComplexType attribute can be applied at both class and property levels, so the output for the following class will be same.
@@ -105,7 +105,7 @@ ComplexType attribute can be applied at both class and property levels, so the o
 		[ComplexType("Address_")]
         public Address UserAddress { get; set; }
     }
-```csharp
+```
 
 
 Anyhow, if you find it useful - great. If you have any ideas - drop me a line at evgeni at etcoding dot com.
