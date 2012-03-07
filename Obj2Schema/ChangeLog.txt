@@ -3,3 +3,6 @@ Added support for TimeSpan. Will be stored as a long/bigint, which allows to sto
 
 1.0.3
 Changed table to include read-only (e.g. {get; private set;}) properties.
+
+1.1
+Added support for complex types.

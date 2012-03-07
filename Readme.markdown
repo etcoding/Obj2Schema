@@ -5,7 +5,7 @@
 This library allows you to take an object and generate a CREATE TABLE Sql statement to store it.
 
 It doesn't do any fancy mapping, and at this moment supports only types that can be directly stored to database, e.g. int, string, bool, enums.
-There's no support for collections or inner complex objects yet. Also there's no support for foreign keys, indexes, filegroups, etc.
+There's no support for collections, foreign keys, indexes, etc.
 
 Right now libriary supports 3 databases: Sql Server, MySql, and Sqlite. Adding new ANSI SQL-compliant database should be very straightforward - 
 just create a new map by inheriting from DbDataTypesMapBase or one of the predefined maps, and filling out the Maps and Expressions dictionaries.
@@ -77,6 +77,35 @@ Again,
 	// sql is "CREATE TABLE Users (FirstName VARCHAR(20), LastName VARCHAR(30), Gender INT NOT NULL, 
 	//			Income DOUBLE(10,2) NULL, CONSTRAINT pk_Users PRIMARY KEY (FirstName, LastName))"
 ```
+
+Types can have complex properties.
+
+```csharp
+    [ComplexType("Address_")]
+    class Address
+    {
+        public string StreetName { get; set; }
+        public string City { get; set; }
+    }
+    class User
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public Address UserAddress { get; set; }
+    }
+```csharp
+
+will generate "CREATE TABLE User (Id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT NULL, Address_StreetName TEXT NULL, Address_City TEXT NULL)".
+ComplexType attribute can be applied at both class and property levels, so the output for the following class will be same.
+```csharp
+    class User
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+		[ComplexType("Address_")]
+        public Address UserAddress { get; set; }
+    }
+```csharp
 
 
 Anyhow, if you find it useful - great. If you have any ideas - drop me a line at evgeni at etcoding dot com.

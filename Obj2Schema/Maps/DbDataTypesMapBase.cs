@@ -88,18 +88,6 @@ namespace ET.Obj2Schema.Maps
         }
 
         /// <summary>
-        /// Determines whether this type should be valid (that is it's one of the types defined in DataTypes enum).
-        /// </summary>
-        /// <param name="type">The type.</param>
-        /// <returns>
-        ///   <c>true</c> if [is valid type] [the specified type]; otherwise, <c>false</c>.
-        /// </returns>
-        public bool IsValidType(Type type)
-        {
-            return this.netToDataTypesMap.ContainsKey(type) || type.IsEnum;
-        }
-
-        /// <summary>
         /// Determines whether the mapping for a given type was specified.
         /// </summary>
         /// <param name="type">The type.</param>
