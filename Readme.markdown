@@ -95,7 +95,11 @@ Types can have complex properties.
     }
 ```
 
-will generate "CREATE TABLE User (Id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT NULL, Address_StreetName TEXT NULL, Address_City TEXT NULL)".
+will generate 
+```
+CREATE TABLE User (Id INTEGER PRIMARY KEY AUTOINCREMENT, Name TEXT NULL, Address_StreetName TEXT NULL, Address_City TEXT NULL)
+```
+
 ComplexType attribute can be applied at both class and property levels, so the output for the following class will be same.
 
 ```csharp
